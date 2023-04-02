@@ -79,7 +79,7 @@ public class car1 {
 	      System.out.println("Name: " + name);
 	      System.out.println("Model: " + model);
 	      System.out.println("Color: " + color);
-	      System.out.println("Top Speed: " + top_speed);
+	      System.out.println("Top Speed(Kms/Hrs): " + top_speed);
 	      System.out.println("Engine Type: " + engine_type);
 	   }
 	 
