@@ -20,9 +20,11 @@ public class carinfo {
 	for (int i = 0; i < cars.length; i++) {
         cars[i].printInfo();
         if (cars[i].street_leagal()) {
-           System.out.println("This car is drivable on street.");
+           System.out.println("You can drive this monster on street mate!");
         } else {
-           System.out.println("This car is not drivable on street.");
+           System.out.println("You can't drive this shit on street mate! ");
+           System.out.println();
+           System.out.println("Buy smoething cheap aye!");
         }
         System.out.println();
      }
