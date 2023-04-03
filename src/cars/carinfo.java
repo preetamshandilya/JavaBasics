@@ -24,7 +24,7 @@ public class carinfo {
         } else {
            System.out.println("You can't drive this shit on street mate! ");
            System.out.println();
-           System.out.println("Buy smoething cheap aye!");
+           System.out.println("Buy something cheap aye!");
         }
         System.out.println();
      }
