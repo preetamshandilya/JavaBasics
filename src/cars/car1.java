@@ -5,6 +5,7 @@ public class car1 {
 	private String model;
 	private String color;
 	private boolean engine_running=false;
+	private boolean driver_active=false;
 	private int speed=0;
 	private int top_speed;
 	private String engine_type;
@@ -92,9 +93,10 @@ public class car1 {
 	   }
 	 
 	 public void start_engine() {
-		 if(engine_running=true) {
+		     engine_running=true;
+			 driver_active=true;
 			 System.out.println("Engine Started!");
-		 }
+		 
 	 }
 	 
 	 public void accelerate(int pace_changed) {
@@ -122,6 +124,19 @@ public class car1 {
 		 	 System.out.println("Speed is reduced to " +speed+ " Kms/Hrs");
 	 }
 	 
+	 
+	 public boolean driver_status() {
+		return driver_active;
+	 }
+	 
+	 
+	 public void stop_engine() {
+		 	 engine_running=false || speed ==0; 
+			 
+			 driver_active=false;
+			 System.out.println("Engine Stoped");
+		 
+	 }
 	 
 
 }

@@ -30,11 +30,19 @@ public class carinfo {
         
         
         cars[i].start_engine();
+        System.out.println("Driver's status : " +cars[i].driver_status());
         
         System.out.println();
         cars[i].accelerate(240);
         System.out.println();
         cars[i].brake(100);
+        
+        System.out.println();
+        
+        cars[i].stop_engine();
+        System.out.println("Driver's status : " +cars[i].driver_status());
+        
+        
         
         System.out.println();
         System.out.println();
