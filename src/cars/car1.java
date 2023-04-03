@@ -1,10 +1,11 @@
 package cars;
 
 public class car1 {
-	private String name;
+	private String name;  
 	private String model;
 	private String color;
-	private boolean street_leagal;
+	private boolean engine_running=false;
+	private int speed=0;
 	private int top_speed;
 	private String engine_type;
 	
@@ -16,15 +17,16 @@ public class car1 {
 		this.color=color;
 		this.top_speed=top_speed;
 		this.engine_type=engine_type;
+		
 	}
 	
-	// getters and setters
+	// getters and setters --->>>> allow access of private variable
 	
-	public String getname() {
+	public String getname() {  // getters returns current value of variables
 		return name;
 	}
 	
-	public void setname(String name) {
+	public void setname(String name) { // setters modifies it
 		this.name=name;
 	}
 	//1
@@ -88,6 +90,39 @@ public class car1 {
 	 public boolean street_leagal() {
 	      return top_speed < 450;
 	   }
+	 
+	 public void start_engine() {
+		 if(engine_running=true) {
+			 System.out.println("Engine Started!");
+		 }
+	 }
+	 
+	 public void accelerate(int pace_changed) {
+		 if(!engine_running) {
+			 System.out.println("Engine not started : can't accelerate!");
+			 
+		 }
+		 
+		 else
+			 speed+=pace_changed;
+		     System.out.println("Accelerating");
+		     System.out.println("Current speed is " +speed+ " Kms/Hrs");
+		     
+		     
+	 }
+	 
+	 public void brake(int pace_changed) {
+		 if(!engine_running) {
+			 System.out.println("car is not in a motion");
+		 }
+		 
+		 else
+			 speed-=pace_changed;
+		 	 System.out.println("Brake applied");
+		 	 System.out.println("Speed is reduced to " +speed+ " Kms/Hrs");
+	 }
+	 
+	 
 
 }
 
